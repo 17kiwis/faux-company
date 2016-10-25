@@ -1,5 +1,5 @@
-@import 'icon/*.png';
-@include all-icon-sprites;
+// @import 'icon/*.png';
+// @include all-icon-sprites;
 
 i {
     height: 100px;
@@ -7,6 +7,15 @@ i {
     display: inline-block;
 }
 
+body {
+  background-image: url("../img/duo-bg.png");
+
+  background-size: cover;
+
+  width: 960px;
+  height: 1500px;
+}
+ 
 li {
     list-style:none;
     display: inline-block;

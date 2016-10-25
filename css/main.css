@@ -528,13 +528,47 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* line 4, ../scss/_base.scss */
+i {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+}
+
+/* line 10, ../scss/_base.scss */
+body {
+  background-image: url("../img/duo-bg.png");
+  background-size: cover;
+  width: 960px;
+  height: 1500px;
+}
+
+/* line 19, ../scss/_base.scss */
+li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+}
+/* line 23, ../scss/_base.scss */
+li a {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}
+/* line 27, ../scss/_base.scss */
+li a span {
+  position: absolute;
+  top: -9999em;
+  left: -9999em;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
 /*
  * Hide visually and from screen readers
  */
-/* line 122, ../scss/_boilerbefore.scss */
+/* line 9, ../scss/_boilerafter.scss */
 .hidden {
   display: none !important;
 }
@@ -543,7 +577,7 @@ textarea {
  * Hide only visually, but have it available for screen readers:
  * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  */
-/* line 131, ../scss/_boilerbefore.scss */
+/* line 18, ../scss/_boilerafter.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -560,7 +594,7 @@ textarea {
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
-/* line 148, ../scss/_boilerbefore.scss */
+/* line 35, ../scss/_boilerafter.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -574,7 +608,7 @@ textarea {
 /*
  * Hide visually and from screen readers, but maintain layout
  */
-/* line 162, ../scss/_boilerbefore.scss */
+/* line 49, ../scss/_boilerafter.scss */
 .invisible {
   visibility: hidden;
 }
@@ -590,7 +624,7 @@ textarea {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 178, ../scss/_boilerbefore.scss */
+/* line 65, ../scss/_boilerafter.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -599,7 +633,7 @@ textarea {
   /* 2 */
 }
 
-/* line 184, ../scss/_boilerbefore.scss */
+/* line 71, ../scss/_boilerafter.scss */
 .clearfix:after {
   clear: both;
 }
@@ -621,7 +655,7 @@ textarea {
    http://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 @media print {
-  /* line 212, ../scss/_boilerbefore.scss */
+  /* line 99, ../scss/_boilerafter.scss */
   *,
   *:before,
   *:after,
@@ -635,18 +669,18 @@ textarea {
     text-shadow: none !important;
   }
 
-  /* line 224, ../scss/_boilerbefore.scss */
+  /* line 111, ../scss/_boilerafter.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 229, ../scss/_boilerbefore.scss */
+  /* line 116, ../scss/_boilerafter.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 233, ../scss/_boilerbefore.scss */
+  /* line 120, ../scss/_boilerafter.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -655,13 +689,13 @@ textarea {
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
    */
-  /* line 242, ../scss/_boilerbefore.scss */
+  /* line 129, ../scss/_boilerafter.scss */
   a[href^="#"]:after,
   a[href^="javascript:"]:after {
     content: "";
   }
 
-  /* line 247, ../scss/_boilerbefore.scss */
+  /* line 134, ../scss/_boilerafter.scss */
   pre,
   blockquote {
     border: 1px solid #999;
@@ -672,23 +706,23 @@ textarea {
    * Printing Tables:
    * http://css-discuss.incutio.com/wiki/Printing_Tables
    */
-  /* line 258, ../scss/_boilerbefore.scss */
+  /* line 145, ../scss/_boilerafter.scss */
   thead {
     display: table-header-group;
   }
 
-  /* line 262, ../scss/_boilerbefore.scss */
+  /* line 149, ../scss/_boilerafter.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 267, ../scss/_boilerbefore.scss */
+  /* line 154, ../scss/_boilerafter.scss */
   img {
     max-width: 100% !important;
   }
 
-  /* line 271, ../scss/_boilerbefore.scss */
+  /* line 158, ../scss/_boilerafter.scss */
   p,
   h2,
   h3 {
@@ -696,35 +730,9 @@ textarea {
     widows: 3;
   }
 
-  /* line 278, ../scss/_boilerbefore.scss */
+  /* line 165, ../scss/_boilerafter.scss */
   h2,
   h3 {
     page-break-after: avoid;
   }
-}
-
-/* line 4, ../scss/_base.scss */
-i {
-  height: 100px;
-  width: 100px;
-  display: inline-block;
-}
-
-/* line 10, ../scss/_base.scss */
-li {
-  list-style: none;
-  display: inline-block;
-  padding: 10px;
-}
-/* line 14, ../scss/_base.scss */
-li a {
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-}
-/* line 18, ../scss/_base.scss */
-li a span {
-  position: absolute;
-  top: -9999em;
-  left: -9999em;
 }

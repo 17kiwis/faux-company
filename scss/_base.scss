@@ -8,12 +8,14 @@ i {
 }
 
 body {
-  background-image: url("../img/duo-bg.png");
+  background-image: url("../img/duo-bg.svg"); 
 
   background-size: cover;
 
   width: 960px;
   height: 1500px;
+
+  color: white;
 }
  
 li {

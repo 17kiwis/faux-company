@@ -19,3 +19,9 @@
 	padding:10px;
 	margin-bottom: 10px;
 }
+
+@mixin box() {
+	background: $box-bg;
+	border: solid 1px black;
+	padding: 10px;
+}
